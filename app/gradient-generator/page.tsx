@@ -103,10 +103,14 @@ color: transparent;
             <div className="w-64">
               <Label htmlFor="direction">Direction:</Label>
               <Select onValueChange={setDirection} defaultValue={direction}>
-                <SelectTrigger className="w-full">
+                <SelectTrigger className='w-full bg-gray-500/50 backdrop-blur-xl text-white'
+        style={{
+          filter: 'drop-shadow(0px 0px 2px #767474)'>
                   <SelectValue placeholder="Select direction" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className='bg-gray-500/50 backdrop-blur-xl text-white'
+        style={{
+          filter: 'drop-shadow(0px 0px 2px #767474)'>
                   <SelectItem value="to right">Left to Right</SelectItem>
                   <SelectItem value="to left">Right to Left</SelectItem>
                   <SelectItem value="to bottom">Top to Bottom</SelectItem>
